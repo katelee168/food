@@ -13,3 +13,5 @@ soup = BeautifulSoup(html)
 
 for category in soup.find_all("div", {"class":"menusampcats"})
 	print category
+	for food in category.find_all("a", {"name": "Recipe_Desc"})
+	print "\t%s" % food
