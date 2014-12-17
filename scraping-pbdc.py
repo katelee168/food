@@ -1,7 +1,12 @@
-import requests
+import urllib
+'''import requests'''
 from bs4 import BeautifulSoup
 
-r = request.get("www.princeton.edu/~pbdc/people.html")
+'''r = request.get("www.princeton.edu/~pbdc/people.html")'''
+
+f = urllib.urlopen("www.princeton.edu/~pbdc/people.html")
+
+r = f.read() 
 
 soup = BeautifulSoup(r)
 
