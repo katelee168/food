@@ -1,6 +1,7 @@
 def scrape(college):
 	import urllib
 	import string
+	import re
 	from bs4 import BeautifulSoup
 
 	'''URL parameters'''
@@ -20,7 +21,9 @@ def scrape(college):
 	'''Find all food in html'''
 	categories = []
 	for category in soup.find_all("div", {'class':'menusampcats'}):
-		categories.append(category.text)
+		'''Clean category text'''
+		cat = category.text
+		categories.append(re.sub('[^\w ]', '', cat).strip())
 
 	foods = []
 	for food in soup.find_all("a", {"name": "Recipe_Desc"}):
