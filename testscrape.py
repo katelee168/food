@@ -1,4 +1,4 @@
 import menus
-[categories, foods] = menus.scrape()
+[categories, foods] = menus.scrape('frist')
 print categories
 print foods
