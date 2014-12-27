@@ -1,0 +1,20 @@
+Flask:
+	microframework, built in for python
+	easy install
+	write templates in python
+	route requests to python
+meteor:
+	python write directly to mongodb
+	write directly to MongoDB from python
+tornado: 
+	tornado with websockets, realtime, dont need fancy client side framework
+		send with json
+django:
+	verbose pirmitives
+
+running at time daily---
+cron:
+	http://www.reddit.com/r/Python/comments/zr3ld/help_i_want_to_run_a_python_script_a_specific/
+pythonanywhere:
+	django, web2py, flask, bottle
+	https://www.pythonanywhere.com/
