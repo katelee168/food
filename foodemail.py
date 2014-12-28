@@ -32,7 +32,7 @@ def send_email(recipient, text, html):
 	try: 
 		server = smtplib.SMTP('smtp.gmail.com:587')
 		server.starttls()
-		server.login(account.login,account.password)
+		server.login(account.login, account.password)
 		problems = server.sendmail(me, recipient, msg.as_string())
 		server.close()
 		print 'sucessfuly sent mail'
