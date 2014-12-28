@@ -1,0 +1,55 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+}
+
+#greeting {
+	/* Text */
+	color: white;
+	font-size: 24px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+
+	/* Container */
+	background-color: #F76609;
+	padding: 50 15 20 15;
+}
+
+#sub-greeting {
+	/* Text */
+	font-size: 16px;
+	text-align: center;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+
+	/* Container */
+	padding: 15;
+}
+
+/* Styling dhall card*/
+.dhall {
+	/*background-color: #B4E0E1;*/
+	
+	/* Container itself */
+	padding: 20px 15px;
+	margin-bottom: 15px;
+	margin-left: 10%;
+	width: -webkit-calc(80% - 30px);
+
+	/* Text */
+	font-family: "HelveticaNeue-Light", "Helvetica Neue";
+	font-size: 14px;
+}
+.dhall-header {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+
+	/* Text */
+	color: #4AA176;
+	font-size: 24px;
+}
+
+/* Footer */
+#footer {
+	background-color: #34425C;
+	color: white;
+	padding:15px;
+	font-size: 13px;
+}
