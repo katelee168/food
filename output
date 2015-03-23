@@ -1,0 +1,259 @@
+<!-- The following is required by Aurora Information Systems, DO NOT MODIFY OR REMOVE -->
+<!-- FIELDFILT.ASP, Version 2.2.1  -->
+<!-- End of Aurora Information Systems Required Text -->
+<html>
+   <head>
+      <title>Aurora Dining Services</title>
+      <link href="css/foodpro.css" rel="stylesheet" type="text/css">
+      </link>
+   </head>
+   <script language="JAVASCRIPT">
+      function ChangeTitle() {
+        top.frames[0].location.href="head.asp?WeeksMenus=This+Week%27s+Menus&locationNum=03&locationName=Forbes+College&sName=";
+        top.frames[2].location.href="date.asp?shortflg=1&locationNum=03&locationName=Forbes+College&sName=&naFlag=1";
+      }
+      var popImg = null
+      var popDiag = null
+      var curHeight = null
+      var curWidth = null
+      var popTop = null
+      var popLeft = null
+      
+      function openPopImg(picName,windowWidth,windowHeight) {
+        closePopImg();
+        curHeight=screen.availHeight;
+        curWidth=screen.availWidth;
+        popTop = 75;
+        popLeft = eval(curWidth - 300);
+        popImg=window.open(picName, '_new', "toolbar=no,scrollbars=no,resizable=yes,top=" + popTop + ",left=" + popLeft + ",width=" + (parseInt(windowWidth)+0) + ",height=" + (parseInt(windowHeight)+0));
+      }
+      function closePopImg(){
+        if(navigator.appName != "Microsoft Internet Explorer" || parseInt(navigator.appVersion) >= 4) if(popImg != null) if(!popImg.closed) popImg.close()
+      }
+      function setStatus(msg){
+        status = msg;
+        return true;
+      }
+      
+      var newWindowOptions = null
+      var newWindowTop = null
+      var newWindowLeft = null
+      
+      function openDescWin(descText, dispName) {
+        if(descText=="")
+        {
+           closeDescWin()
+        }
+        else
+        {
+           newWindowTop = screen.height - (screen.height * 0.75) - 80
+           newWindowLeft = screen.width - 310;
+           newWindowOptions = "toolbar=no,width=300,height=125,top=" + newWindowTop + ",left=" + newWindowLeft + ",alwaysRaised=yes";
+           popDiag=window.open("", "Recipe_Desc", newWindowOptions);
+           descText = descText.replace("~","'");
+           dispName = dispName.replace("~","'");
+           popDiag.document.write("<html><head><title>" + dispName + "</title><link rel='stylesheet' href='foodpro_web_ina.css' type='text/css'></head><body><div class='menusampproddesc'>" + descText + "</div></body></html>");
+        }
+      }
+      function closeDescWin(){
+         if(navigator.appName != "Microsoft Internet Explorer" || parseInt(navigator.appVersion) >= 4) if(popDiag != null) if(!popDiag.closed) popDiag.close();
+      }
+   </script>
+   <body onload="ChangeTitle();" onunload="closePopImg();">
+      <h2>Menus for Sunday, March 22, 2015</h2>
+      <br>
+      <strong>Click the nutrition bar for complete menu and interactive nutritive analysis:</strong>
+      <br style="clear: both; line-height: 10px;">
+      <br style="clear: both; line-height: 10px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td valign="top" width="50%">
+               <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+                  <tr>
+                     <td align="left" height="15">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                           <tr>
+                              <td align="left" valign="bottom">
+                                 <div id="menusampmeals">Dinner
+                                    <a href="pickMenu.asp?locationNum=03&amp;locationName=Forbes+College&amp;dtdate=03%2F22%2F2015&amp;mealName=Dinner&amp;sName=" name="Dinner" onmouseout="window.status= ' ';" onmouseover="window.status = 'Click for Nutritive Analysis.'; return true;" target="_self"><img border="0" src="images/nutrition.jpg"/></a>
+                                 </div>
+                              </td>
+                              <td> 
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr height="5">
+                     <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                           <tr>
+                              <td colspan="4">
+                                 <div class="menusampcats"><span style="color: ">-- Main Entree --</span></div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top" width="80%">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                                    <tr>
+                                       <td>
+                                          <!-- Recipe Name Is Displayed Here -->
+                                          <div class="menusamprecipes"><span style="color: #000000"><a name="Recipe_Desc" onmouseout="javascript:closeDescWin()" onmouseover="javascript:openDescWin('','Buffalo Wings')">Buffalo Wings</a></span></div>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/e2logo.jpg" width="16">
+                                          </img>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/CFgreen.jpg" width="16">
+                                          </img>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                              <td valign="top" width="5%"> 
+                              </td>
+                              <td align="right" colspan="1" valign="top" width="10%">
+                                 <div class="menusampprices"><span style="color: #000000"> </span></div>
+                              </td>
+                              <td colspan="1" valign="top" width="5%"> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td colspan="4">
+                                 <div class="menusampcats"><span style="color: ">-- Vegetarian &amp; Vegan Entree --</span></div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top" width="80%">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                                    <tr>
+                                       <td>
+                                          <!-- Recipe Name Is Displayed Here -->
+                                          <div class="menusamprecipes"><span style="color: #00FF00"><a name="Recipe_Desc" onmouseout="javascript:closeDescWin()" onmouseover="javascript:openDescWin('','Vegetable Burrito')">Vegetable Burrito</a></span></div>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/e2logo.jpg" width="16">
+                                          </img>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/CFgreen.jpg" width="16">
+                                          </img>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                              <td valign="top" width="5%"> 
+                              </td>
+                              <td align="right" colspan="1" valign="top" width="10%">
+                                 <div class="menusampprices"><span style="color: #00FF00"> </span></div>
+                              </td>
+                              <td colspan="1" valign="top" width="5%"> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td colspan="4">
+                                 <div class="menusampcats"><span style="color: ">-- On the Side --</span></div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top" width="80%">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                                    <tr>
+                                       <td>
+                                          <!-- Recipe Name Is Displayed Here -->
+                                          <div class="menusamprecipes"><span style="color: #00FF00"><a name="Recipe_Desc" onmouseout="javascript:closeDescWin()" onmouseover="javascript:openDescWin('','Brown Sugar Baked Sweet Potato &amp; Butternut Squash')">Brown Sugar Baked Sweet Potato &amp; Butternut Squash</a></span></div>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/CFgreen.jpg" width="16">
+                                          </img>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                              <td valign="top" width="5%"> 
+                              </td>
+                              <td align="right" colspan="1" valign="top" width="10%">
+                                 <div class="menusampprices"><span style="color: #00FF00"> </span></div>
+                              </td>
+                              <td colspan="1" valign="top" width="5%"> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top" width="80%">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                                    <tr>
+                                       <td>
+                                          <!-- Recipe Name Is Displayed Here -->
+                                          <div class="menusamprecipes"><span style="color: #0000FF"><a name="Recipe_Desc" onmouseout="javascript:closeDescWin()" onmouseover="javascript:openDescWin('','Green Peas')">Green Peas</a></span></div>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/e2logo.jpg" width="16">
+                                          </img>
+                                       </td>
+                                       <td valign="bottom" width="10%">
+                                          <img align="bottom" alt="" height="16" src="LegendImages/CFgreen.jpg" width="16">
+                                          </img>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                              <td valign="top" width="5%"> 
+                              </td>
+                              <td align="right" colspan="1" valign="top" width="10%">
+                                 <div class="menusampprices"><span style="color: #0000FF"> </span></div>
+                              </td>
+                              <td colspan="1" valign="top" width="5%"> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td colspan="4">
+                                 <div class="menusampcats"><span style="color: ">-- Specialty Bars --</span></div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td valign="top" width="80%">
+                                 <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                                    <tr>
+                                       <td>
+                                          <!-- Recipe Name Is Displayed Here -->
+                                          <div class="menusamprecipes"><span style="color: #000000"><a name="Recipe_Desc" onmouseout="javascript:closeDescWin()" onmouseover="javascript:openDescWin('','Hot Dog Bar')">Hot Dog Bar</a></span></div>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                              <td valign="top" width="5%"> 
+                              </td>
+                              <td align="right" colspan="1" valign="top" width="10%">
+                                 <div class="menusampprices"><span style="color: #000000"> </span></div>
+                              </td>
+                              <td colspan="1" valign="top" width="5%"> 
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <!-- The following is required by Aurora Information Systems -- DO NOT MODIFY OR REMOVE -->
+      <br>
+      <div id="poweredbyfoodpro">Powered by FoodPro<sup>®</sup></div>
+      <!-- End of Aurora Information Systems Required Text -->
+      <form>
+         <table align="center" border="0" width="80%">
+            <tr>
+               <td align="center">
+                  <input onclick="top.location.href='location.asp';" style="WIDTH: 175px" type="button" value="Return to Location Selection" width="175px">
+                  </input>
+               </td>
+            </tr>
+         </table>
+      </form>
+      </br></br></br></br>
+   </body>
+</html>
+<!-- The following is required by Aurora Information Systems, DO NOT MODIFY OR REMOVE -->
+<!-- MENUSAMP.ASP, Version 2.2.3  -->
+<!-- End of Aurora Information Systems Required Text -->
