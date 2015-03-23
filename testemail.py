@@ -14,7 +14,7 @@ html = """\
   <body style="font-family: &quot;HelveticaNeue-Light&quot;, &quot;Helvetica Neue&quot;;">
     <div class="outside">
       <div id="greeting" style="color: white;font-size: 24px;font-family: &quot;HelveticaNeue-Light&quot;, &quot;Helvetica Neue&quot;;background-color: #F76609;padding: 50px 15px 20px 15px;">
-        Good morning, Sunshine
+        Good morning!
       </div>
       </div>
       <div class="container dhall" style="padding: 20px 15px;margin-bottom: 15px;margin-left: 10%;width: -webkit-calc(80% - 30px);font-family: &quot;HelveticaNeue-Light&quot;, &quot;Helvetica Neue&quot;;font-size: 14px;">
